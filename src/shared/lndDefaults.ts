@@ -80,7 +80,6 @@ export const defaultListChannels = (
   value: Partial<LND.ListChannelsResponse>,
 ): LND.ListChannelsResponse => ({
   channels: mapArray(value.channels || [], defaultChannel),
-  ...value,
 });
 
 export const defaultPendingChannel = (
